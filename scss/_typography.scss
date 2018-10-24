@@ -1,0 +1,124 @@
+.caption {
+    font-family: 'Oswald', Arial, sans-serif;
+    font-size: 24px;
+    font-weight: normal;
+    line-height: 24px;
+
+    display: flex;
+
+    color: #111;
+
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+
+    @media (min-width: $tablet-width) {
+        font-size: 36px;
+        line-height: 36px;
+    }
+}
+
+.caption span {
+    width: 190px;
+
+    @media (min-width: $tablet-width) {
+        width: auto;
+    }
+}
+
+.caption::after {
+    width: 30px;
+    height: 3px;
+    margin-top: 5px;
+    margin-right: calc((100vw - 280px)/-2);
+    margin-left: 22px;
+
+    content: '';
+
+    background-color: #68b738;
+
+    flex-grow: 1;
+    flex-shrink: 0;
+
+    @media (min-width: $tablet-width) {
+        margin-right: calc((100vw - 708px)/-2);
+        margin-left: 44px;
+    }
+
+    @media (min-width: $desktop-width) {
+        margin-right: calc((100vw - 1240px)/-2);
+        margin-left: 44px;
+    }
+}
+
+.heading {
+    font-family: 'Oswald', Arial, sans-serif;
+    font-size: 36px;
+    font-weight: normal;
+    line-height: 60px;
+
+    letter-spacing: -.02em;
+
+    color: #111;
+
+    @media (min-width: $tablet-width) {
+        font-size: 60px;
+    }
+}
+
+.heading3 {
+    font-family: 'Oswald', Arial, sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 20px;
+
+    text-transform: uppercase;
+
+    color: #111;
+
+    @media (min-width: $tablet-width) {
+        font-size: 20px;
+    }
+}
+
+.description {
+    font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+
+    color: #444;
+}
+
+.description--normal {
+    font-size: 14px;
+    line-height: 18px;
+
+    @media (min-width: $tablet-width) {
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
+
+.description--little {
+    font-size: 12px;
+    line-height: 16px;
+
+    @media (min-width: $tablet-width) {
+        font-size: 16px;
+    }
+}
+
+.description--oswald {
+    font-family: 'Oswald', Arial, sans-serif;
+}
+
+.label {
+    font-family: 'Oswald', Arial, sans-serif;
+    font-size: 16px;
+    line-height: 18px;
+
+    text-transform: uppercase;
+
+    @media (min-width: $tablet-width) {
+        font-size: 20px;
+        line-height: 20px;
+    }
+}

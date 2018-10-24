@@ -1,0 +1,338 @@
+.catalog__heading {
+    padding-top: 20px;
+    padding-bottom: 30px;
+
+    @media (min-width: $tablet-width) {
+        padding-top: 50px;
+        padding-bottom: 20px;
+    }
+}
+
+.catalog__list {
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width: $tablet-width) {
+        flex-direction: row;
+
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+}
+
+.catalog__item {
+    display: flex;
+
+    padding-bottom: 24px;
+
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    @media (min-width: $tablet-width) {
+        position: relative;
+
+        flex-direction: column;
+
+        box-sizing: border-box;
+        width: 324px;
+        min-height: 430px;
+        margin-top: 140px;
+        margin-bottom: 0;
+        padding: 160px 35px 40px 35px;
+        ;
+
+        background-color: #f2f2f2;
+    }
+
+    @media (min-width: $desktop-width) {
+        width: 245px;
+    }
+}
+
+.show-more {
+    flex-direction: column;
+
+    align-items: center;
+
+    @media (min-width: $tablet-width) {
+        border: 1px solid #f2f2f2;
+        background-color: transparent;
+    }
+}
+
+@media (min-width: $tablet-width) {
+    .product>p {
+        margin-bottom: 10px;
+        padding-bottom: 5px;
+
+        border-bottom: 1px solid #cdcdcd;
+    }
+
+    .show-more__description {
+        width: 180px;
+        margin-top: 20px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+
+.catalog__img {
+    width: 50%;
+
+    @media (min-width: $tablet-width) {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        width: auto;
+        bottom: 300px;
+    }
+}
+
+.catalog__product {
+    width: 50%;
+    padding-top: 20px;
+
+    @media (min-width: $tablet-width) {
+        width: 100%;
+        padding-top: 0;
+    }
+}
+
+.catalog__button {
+    width: 100%;
+
+    @media (min-width: $tablet-width) {
+        margin-top: 20px;
+        margin-bottom: 0;
+    }
+}
+
+.catalog__hr {
+    box-sizing: border-box;
+    width: 100vw;
+    margin-top: 25px;
+}
+
+.product__name {
+    width: 85px;
+    margin-bottom: 10px;
+
+    @media (min-width: $tablet-width) {
+        width: 140px;
+        margin-right: auto;
+        margin-bottom: 25px;
+        margin-left: auto;
+
+        text-align: center;
+    }
+}
+
+.product__value {
+    float: right;
+}
+
+.catalog__plus {
+    display: none;
+    display: block;
+
+    width: auto;
+    width: 30px;
+    height: 30px;
+    margin: 25px auto 25px auto;
+
+    @media (min-width: $tablet-width) {
+        position: absolute;
+        top: 55px;
+        left: 50%;
+
+        width: 60px;
+        height: 60px;
+        margin: 0;
+        margin-left: -30px;
+    }
+}
+
+.show-more__title {
+    margin-bottom: 10px;
+
+    text-align: center;
+}
+
+.show-more__description {
+    margin-bottom: 20px;
+
+    text-align: center;
+}
+
+.extra {
+    margin-bottom: 35px;
+
+    @media (min-width: $tablet-width) {
+        margin-bottom: 75px;
+    }
+
+    @media (min-width: $desktop-width) {
+        margin-bottom: 85px;
+    }
+}
+
+@media (min-width: $desktop-width) {
+    .extra__wrapper {
+        display: flex;
+
+        flex-wrap: wrap;
+    }
+}
+
+.extra__caption {
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    @media (min-width: $tablet-width) {
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+
+    @media (min-width: $desktop-width) {
+        width: 100%;
+    }
+}
+
+@media (min-width: $desktop-width) {
+    .extra__list {
+        width: 895px;
+    }
+}
+
+.extra__item {
+    display: flex;
+
+    padding-top: 14px;
+    padding-bottom: 17px;
+
+    border-top: 1px solid #cdcdcd;
+
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: top;
+
+    @media (min-width: $tablet-width) {
+        padding-top: 27px;
+        padding-bottom: 27px;
+
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    @media (min-width: $tablet-width) {
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+}
+
+.extra__item:last-child {
+    border-bottom: 1px solid #cdcdcd;
+}
+
+.extra__name {
+    width: 100%;
+
+    @media (min-width: $tablet-width) {
+        width: auto;
+    }
+}
+
+.extra__amount {
+    @media (min-width: $tablet-width) {
+        margin-left: auto;
+    }
+
+    @media (min-width: $desktop-width) {
+        width: 245px;
+        margin-left: auto;
+    }
+}
+
+.extra__value {
+    @media (min-width: $tablet-width) {
+        margin-left: 52px;
+    }
+
+    @media (min-width: $desktop-width) {
+        width: 80px;
+        margin-left: 0;
+    }
+}
+
+.extra__button {
+    width: 100%;
+    margin-top: 10px;
+
+    @media (min-width: $tablet-width) {
+        margin-top: 25px;
+    }
+
+    @media (min-width: $desktop-width) {
+        width: 245px;
+        margin-top: 0;
+    }
+}
+
+.gift {
+    width: 100%;
+    min-height: 290px;
+    margin-top: 40px;
+
+    background-color: #72b649;
+    background-image: url(../img/gift.svg), url(../img/gift-photo-mobile.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 65px, 0 0;
+    background-size: 55px 60px, cover;
+
+    @media (min-width: $tablet-width) {
+        min-height: 200px;
+        margin-top: 70px;
+
+        background-image: url(../img/gift.svg), url(../img/gift-photo-tablet.jpg);
+        background-position: 90px 50%, 0 0;
+    }
+
+    @media (min-width: $desktop-width) {
+        width: 245px;
+        margin-top: 0;
+        margin-left: auto;
+
+        background-position: 50% 65px, 0 0;
+    }
+}
+
+.gift__description {
+    font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+
+    width: 180px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 185px;
+
+    text-align: center;
+
+    color: #fff;
+
+    @media (min-width: $tablet-width) {
+        padding-top: 70px;
+        padding-left: 423px;
+
+        text-align: left;
+    }
+
+    @media (min-width: $desktop-width) {
+        margin-right: auto;
+        margin-left: auto;
+        padding-top: 185px;
+        padding-left: 0;
+
+        text-align: center;
+    }
+}

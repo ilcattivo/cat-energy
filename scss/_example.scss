@@ -1,0 +1,410 @@
+.example {
+    background-color: #f2f2f2;
+
+    @media (min-width: $tablet-width) {
+        background-image: linear-gradient(to top, #f2f2f2, #f2f2f2 462px, #fff 462px);
+    }
+
+    @media (min-width: $desktop-width) {
+        background: linear-gradient(to bottom, #fff 185px, #f2f2f2 185px, #f2f2f2);
+    }
+}
+
+@media (min-width: $desktop-width) {
+    .example__container {
+        display: flex;
+
+        justify-content: space-between;
+    }
+
+    .example__cat {
+        width: 610px;
+        margin-top: -230px;
+    }
+}
+
+.example__heading {
+    margin: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    @media (min-width: $tablet-width) {
+        padding-top: 50px;
+        padding-bottom: 60px;
+    }
+
+    @media (min-width: $desktop-width) {
+        padding-bottom: 75px;
+    }
+}
+
+.example__description {
+    margin-top: 0;
+    margin-bottom: 25px;
+
+    @media (min-width: $desktop-width) {
+        width: 440px;
+        margin-bottom: 70px;
+        padding-top: 70px;
+    }
+}
+
+.result {
+    display: flex;
+
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    @media (min-width: $tablet-width) {
+        justify-content: flex-start;
+    }
+}
+
+.result__wrapper {
+    width: 124px;
+
+    @media (min-width: $tablet-width) {
+        width: 162px;
+        margin-right: 42px;
+    }
+}
+
+.result__value {
+    font-family: 'Oswald', Arial, sans-serif;
+    font-size: 24px;
+    line-height: 24px;
+
+    display: block;
+
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+    text-align: center;
+    text-transform: uppercase;
+
+    color: #111;
+    border: 1px solid #cdcdcd;
+    border-radius: 2px;
+}
+
+.result__description {
+    font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+    font-size: 12px;
+    line-height: 12px;
+
+    display: block;
+
+    box-sizing: border-box;
+    width: 87px;
+    margin: 0 auto;
+    margin-top: -8px;
+    padding-right: 16px;
+    padding-left: 16px;
+
+    text-align: center;
+
+    color: #444;
+    background-color: #f2f2f2;
+
+    @media (min-width: $tablet-width) {
+        font-size: 14px;
+        line-height: 14px;
+
+        width: 114px;
+        padding-right: 8px;
+        padding-left: 8px;
+
+        background-color: #fff;
+    }
+
+    @media (min-width: $desktop-width) {
+        background-color: #f2f2f2;
+    }
+}
+
+.example__expenses {
+    font-family: 'Oswald', Arial, sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+
+    padding-top: 15px;
+
+    text-align: center;
+    text-transform: uppercase;
+
+    flex-basis: 100%;
+
+    @media (min-width: $tablet-width) {
+        font-size: 20px;
+        line-height: 30px;
+
+        margin-left: auto;
+        padding-top: 0;
+
+        text-align: right;
+
+        flex-basis: 192px;
+    }
+
+    @media (min-width: $desktop-width) {
+        margin-top: 50px;
+        margin-left: 0;
+
+        text-align: left;
+
+        flex-basis: 100%;
+    }
+}
+
+.example__img {
+    width: 280px;
+    height: 240px;
+    margin: 0 auto;
+    margin-top: 35px;
+
+    transition: background-position .3s cubic-bezier(.30, 1, 0, 1);
+
+    background-image: url(../img/before-mobile.png), url(../img/after-mobile.png);
+    background-repeat: no-repeat;
+    background-position: center center, 999px center;
+
+    @media (min-width: $tablet-width) {
+        width: 677px;
+        height: 517px;
+        margin-top: 80px;
+
+        background-image: url(../img/before-desktop.png), url(../img/after-desktop.png);
+    }
+}
+
+.example__img--after {
+    background-position: -999px center, center center;
+}
+
+.before-after {
+    display: flex;
+
+    padding-top: 35px;
+    padding-right: 24px;
+    padding-bottom: 30px;
+    padding-left: 24px;
+
+    justify-content: center;
+    align-items: center;
+
+    @media (min-width: $tablet-width) {
+        width: 570px;
+        padding-bottom: 60px;
+    }
+
+    @media (min-width: $desktop-width) {
+        padding-right: 0;
+        padding-left: 0;
+    }
+}
+
+.toggle {
+    position: relative;
+
+    display: inline-block;
+
+    width: 84px;
+    height: 12px;
+    margin-right: 20px;
+    margin-left: 20px;
+
+    border: 1px solid #cdcdcd;
+    border-radius: 5px;
+    background-color: #fff;
+
+    @media (min-width: $tablet-width) {
+        display: none;
+    }
+}
+
+.toggle__inner {
+    position: absolute;
+    top: 3px;
+    left: 5px;
+
+    width: 35px;
+    height: 5px;
+
+    transition: left .3s;
+
+    border-radius: 2px;
+    background-color: #68b738;
+}
+
+.toggle__inner--right {
+    left: 42px;
+}
+
+@media (min-width: $tablet-width) {
+    .slider__label {
+        display: inline-block;
+
+        padding-bottom: 5px;
+
+        border-bottom: 1px dotted #bebebe;
+    }
+}
+
+.slider-range__wrapper {
+    box-sizing: border-box;
+    width: 428px;
+    margin-right: 24px;
+    margin-left: 24px;
+}
+
+.slider-range {
+    /* Hides the slider so that custom slider can be made */
+    width: 100%;
+    /* Specific width is required for Firefox. */
+
+    background: transparent;
+
+    -webkit-appearance: none;
+    /* Otherwise white in Chrome */
+}
+
+.slider-range::-webkit-slider-thumb {
+    -webkit-appearance: none;
+}
+
+.slider-range:focus {
+    outline: none;
+    /* Removes the blue border. You should probably do some kind of focus styling for accessibility reasons though. */
+}
+
+.slider-range::-ms-track {
+    width: 100%;
+
+    cursor: pointer;
+
+    color: transparent;
+    border-color: transparent;
+    /* Hides the slider so custom styles can be added */
+    background: transparent;
+}
+
+/* All the same stuff for Firefox */
+.slider-range::-moz-range-thumb {
+    position: relative;
+
+    width: 32px;
+    height: 32px;
+
+    cursor: pointer;
+
+    border: 1px solid #cdcdcd;
+    border-radius: 50%;
+    background-color: #68b738;
+    box-shadow: inset 0 0 0 12px #fff;
+}
+
+.slider-range::-webkit-slider-thumb {
+    width: 32px;
+    height: 32px;
+    margin-top: -14px;
+
+    cursor: pointer;
+
+    border: 1px solid #cdcdcd;
+    border-radius: 50%;
+    background: #68b738;
+    /* Add cool effects to your sliders! */
+    box-shadow: inset 0 0 0 12px #fff;
+
+    -webkit-appearance: none;
+    /* You need to specify a margin in Chrome, but in Firefox and IE it is automatic */
+}
+
+.slider-range::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 8.4px;
+
+    cursor: pointer;
+
+    border: .2px solid #010101;
+    border-radius: 1.3px;
+    background: #3071a9;
+    box-shadow: 1px 1px 1px #000, 0 0 1px #0d0d0d;
+}
+
+.slider-range:focus::-webkit-slider-runnable-track {
+    background: #367ebd;
+}
+
+.slider-range::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 6px;
+
+    cursor: pointer;
+
+    border: 0 solid #18d501;
+    border-radius: 3px;
+    background: #dcdcdc;
+    box-shadow: 0 0 0 #020;
+
+    animate: .2s;
+}
+
+.slider-range:focus::-webkit-slider-runnable-track {
+    background: #dcdcdc;
+}
+
+.slider-range::-moz-range-track {
+    width: 100%;
+    height: 6px;
+
+    cursor: pointer;
+
+    border: 0 solid #18d501;
+    border-radius: 3px;
+    background: #dcdcdc;
+    box-shadow: 0 0 0 #020;
+
+    animate: .2s;
+}
+
+.slider-range::-ms-track {
+    width: 100%;
+    height: 6px;
+
+    cursor: pointer;
+
+    color: transparent;
+    border-color: transparent;
+    background: transparent;
+
+    animate: .2s;
+}
+
+.slider-range::-ms-fill-lower {
+    border: 0 solid #18d501;
+    border-radius: 6px;
+    background: #dcdcdc;
+    box-shadow: 0 0 0 #020;
+}
+
+.slider-range::-ms-fill-upper {
+    border: 0 solid #18d501;
+    border-radius: 6px;
+    background: #dcdcdc;
+    box-shadow: 0 0 0 #020;
+}
+
+.slider-range:focus::-ms-fill-lower {
+    background: #dcdcdc;
+}
+
+.slider-range:focus::-ms-fill-upper {
+    background: #dcdcdc;
+}
+
+@media (max-width: $tablet-width - 1) {
+    .slider-range__wrapper {
+        display: none;
+    }
+}

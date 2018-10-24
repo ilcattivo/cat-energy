@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Подбор программы</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="program-selection">
+    <header class="page-header">
+        <div class="container">
+            <nav class="main-menu">
+                <ul class="main-menu__list site-list">
+                    <li class="site-list__item nav-logo"><a href="index.html" class="site-list__link"><span class="visually-hidden">Домашняя страница</span></a>
+                        <button class="hamburger hamburger--spin" type="button">
+                            <span class="hamburger-box">
+    <span class="hamburger-inner"></span>
+                            </span>
+                        </button>
+                        <hr class="hr hr--nav hr--mobile">
+                    </li>
+                    <li class="site-list__item site-list__drop site-list__drop--hidden"><a href="index.html" class="site-list__link">Главная</a>
+                        <hr class="hr hr--nav hr--mobile">
+                    </li>
+                    <li class="site-list__item site-list__drop site-list__drop--hidden"><a href="catalog.html" class="site-list__link">Каталог продукции</a>
+                        <hr class="hr hr--nav hr--mobile">
+                    </li>
+                    <li class="site-list__item site-list__drop site-list__drop--hidden"><a href="program-selection.html" class="site-list__link">Подбор программы</a>
+                        <hr class="hr hr--nav hr--mobile">
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <h1 class="heading program-form__heading">Подбор программы</h1>
+            <p class="label program-form__description">Заполните анкету и мы подберем программу питания для вашего кота</p>
+            <form action="#" class="program-form" method="post">
+                <fieldset class="cat-param program-form__fieldset">
+                    <p class="program-form__field program-form__field--text cat-param__field">
+                        <label for="cat-name" class="label">Имя:*</label>
+                        <input type="text" id="cat-name" class="input-text program-form__input" placeholder="Барсик" required>
+                    </p>
+                    <p class="program-form__field program-form__field--text cat-param__field">
+                        <label for="cat-weight" class="label">Вес (кг):*</label>
+                        <input type="text" id="cat-weight" class="input-text program-form__input" size="15" placeholder="7" required>
+                    </p>
+                    <p class="program-form__field program-form__field--text cat-param__field">
+                        <label for="cat-age" class="label">Возраст (лет):</label>
+                        <input type="text" id="cat-age" class="input-text program-form__input" size="15" placeholder="7">
+                    </p>
+                </fieldset>
+                <hr class="hr hr--mobile">
+                <fieldset class="target program-form__fieldset">
+                    <p class="program-form__field program-form__field--radio">
+                        <label class="label">
+                            <input type="radio" name="target" class="target__radio">Похудение
+                        </label>
+                    </p>
+                    <p class="program-form__field program-form__field--radio">
+                        <label class="label">
+                            <input type="radio" name="target" class="target__radio">Набор массы
+                        </label>
+                    </p>
+                    <p class="program-form__field program-form__field--radio">
+                        <label class="label">
+                            <input type="radio" name="target" class="target__radio">Не знаю (нужен ваш совет)
+                        </label>
+                    </p>
+                </fieldset>
+                <hr class="hr hr--mobile">
+                <fieldset class="cat-owner program-form__fieldset">
+                    <h2 class="caption program-form__caption"><span>Контактные данные (владельца кота)</span></h2>
+                    <p class="program-form__field program-form__field--text">
+                        <label for="input-email" class="label">E-mail:*</label>
+                        <input type="email" placeholder="Kuklachev@gmail.com" required id="input-email" class="input-text program-form__input mail-icon" size="15">
+                    </p>
+                    <p class="program-form__field">
+                        <label for="input-tel" class="label">Телефон:*</label>
+                        <input type="tel" placeholder="8 (960) 900-60-90" required id="tel" class="input-text program-form__input phone-icon" size="15">
+                    </p>
+                </fieldset>
+                <fieldset class="comment program-form__fieldset">
+                    <h2 class="caption program-form__caption">Комментарий</h2>
+                    <textarea name="form-comment" class="input-text program-form__comment" placeholder="Расскажите обо всех повадках кота"></textarea>
+                </fieldset>
+                <fieldset class="program-form__fieldset additionally">
+                    <h2 class="caption program-form__caption additionally__caption">Дополнительно</h2>
+                    <p class="additionally__field">
+                        <label class="label">
+                            <input type="checkbox"> Сахарозаменитель
+                        </label>
+                    </p>
+                    <p class="additionally__field">
+                        <label class="label">
+                            <input type="checkbox"> Питьевая вода
+                        </label>
+                    </p>
+                    <p class="additionally__field">
+                        <label class="label">
+                            <input type="checkbox"> Молоко
+                        </label>
+                    </p>
+                    <p class="additionally__field">
+                        <label class="label">
+                            <input type="checkbox"> Витамины
+                        </label>
+                    </p>
+                    <button class="button program-form__send">Отправить заявку</button>
+                    <span class="description program-form__footnote">* — Обязательные поля</span>
+                </fieldset>
+            </form>
+        </div>
+        <section class="contacts">
+            <div class="container contacts__container">
+                <div class="contacts__wrapper">
+                    <h3 class="heading3 contacts__heading">Приглашаем<br>к сотрудничеству<br>дилеров!</h3>
+                    <p class="description description--normal description--normal contacts__info">ул. Большая<br>Конюшенная, д. 19/8<br><span class="contacts__city">Санкт-Перетбург</span>
+                </div>
+            </div>
+            <picture>
+                <source media="(min-width:1300px)" srcset="img/map-desktop.png">
+                <source media="(min-width:768px)" srcset="img/map-tablet.png">
+                <img class="contacts-map" src="img/map-mobile.png" alt="Карта проезда">
+            </picture>
+        </section>
+    </main>
+    <footer class="page-footer">
+        <div class="container page-footer__wrapper">
+            <a href="index.html" class="site-logo page-footer__site-logo"><img src="img/footer-logo.svg" width="128" height="24" alt="cat energy logo"></a>
+            <ul class="social-links">
+                <li class="social-linls__item"><a href="vk.com" class="social-link social-links__social-link social-links__link--vk"></a></li>
+                <li class="social-linls__item"><a href="instagram.com" class="social-link social-links__social-link social-links__link--instagram"></a></li>
+                <li class="social-linls__item"><a href="facebook.com" class="social-link social-links__social-link social-links__link--fb"></a></li>
+            </ul>
+            <p class="copyright page-footer__copyright">HTML Academy</p>
+        </div>
+    </footer>
+    <script src="js/hamburger.js"></script>
+</body>
+
+</html>

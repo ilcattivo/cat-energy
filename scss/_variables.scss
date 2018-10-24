@@ -1,0 +1,9 @@
+$mobile-width: 280px;
+$tablet-width: 768px;
+$desktop-width: 1300px;
+
+@mixin respond-to($media) {
+  @if $media == tablet-only {
+    @media (min-width: $tablet-width) and (max-width: $desktop-width - 1) { @content; }
+  }
+}

@@ -1,0 +1,79 @@
+*,
+*:before,
+*:after {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.container {
+    width: $mobile-width;
+    margin: 0 auto;
+
+    @media (min-width: $tablet-width) {
+        box-sizing: border-box;
+        width: 708px;
+        margin: 0 auto;
+    }
+
+    @media (min-width: $desktop-width) {
+        width: 1220px;
+    }
+}
+
+.visually-hidden {
+    position: absolute !important;
+
+    overflow: hidden;
+    clip: rect(1px 1px 1px 1px);
+    /* IE6, IE7 */
+    clip: rect(1px, 1px, 1px, 1px);
+
+    width: 1px !important;
+    height: 1px !important;
+    padding: 0 !important;
+
+    border: 0 !important;
+}
+
+.hr {
+    position: absolute;
+    left: 0;
+
+    box-sizing: border-box;
+    width: 100vw;
+
+    border: 1px solid #ededed;
+}
+
+.hr--nav {
+    margin-left: calc((100vw - 280px)/-2);
+}
+
+@media (min-width: $tablet-width) {
+    .hr--mobile {
+        display: none;
+    }
+}
+
+.hr--tablet {
+    @media (min-width: $desktop-width) {
+        display: none;
+    }
+}
